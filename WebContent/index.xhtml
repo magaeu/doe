@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>Doacao</title>
+</h:head>
+
+<h:body>
+	<h2>Realizar Doacao</h2>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Nome" for="lbNome" />
+			<h:inputText value="#{doacaoBean.doacao.nome}" id="lbNome" name="nome" />
+
+			<h:outputLabel value="Email" for="lbEmail" />
+			<h:inputText value="#{doacaoBean.doacao.email}" id="lbEmail" name="email" />
+
+			<h:commandButton value="Doar" id="btnDoar" name="doar" action="#{doacaoBean.doar()}"
+				 />
+
+		</h:panelGrid>
+	</h:form>
+
+</h:body>
+</html>
