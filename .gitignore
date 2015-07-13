@@ -7,7 +7,6 @@ target/
 *.war
 
 # Eclipse #
-.project
 .metadata
 bin/**
 tmp/**
