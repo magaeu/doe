@@ -19,19 +19,19 @@ public class Doacao implements Serializable {
 	private static final long serialVersionUID = 7002927369053746541L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name = "id")
-	private Integer id;
+	private Long id;
 	
 	@Column(name= "nome")
 	private String nome;
 	@Column(name = "email")
 	private String email;
 	
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNome() {

@@ -1,11 +1,14 @@
 package com.database;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
 import com.helpers.JPAUtil;
 import com.models.Doacao;
 
 public class DoacaoDao {
 	
+	@PersistenceContext
 	private EntityManager manager = JPAUtil.getEntityManager();
 	
 	public EntityManager getManager() {

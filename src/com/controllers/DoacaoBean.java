@@ -1,7 +1,5 @@
 package com.controllers;
 
-import java.util.List;
-
 import javax.faces.bean.ManagedBean;
 
 import com.database.DoacaoDao;
@@ -11,7 +9,6 @@ import com.models.Doacao;
 public class DoacaoBean {
 	
     private Doacao doacao = new Doacao();
-    private List<Doacao> doacoes;
     
     public void doar() {
           
@@ -26,14 +23,5 @@ public class DoacaoBean {
     public void setDoacao(Doacao doacao) {
           this.doacao = doacao;
     }
-
-	public List<Doacao> getDoacoes() {
-		return doacoes;
-	}
-
-	public void setDoacoes(List<Doacao> doacoes) {
-		this.doacoes = doacoes;
-	}
-
 
 }
